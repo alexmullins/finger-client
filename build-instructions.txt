@@ -1,6 +1,7 @@
 These projects are built with the Rust programming language (https://www.rust-lang.org/en-US/).
 Think C/C++ but no segmentation faults or memory errors. Yay!
 
+A prebuilt binary is located in the root directory: finger-client
 ===========================
 Section 1. Installing Rust
 ===========================
