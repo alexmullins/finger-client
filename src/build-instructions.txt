@@ -1,0 +1,41 @@
+These projects are built with the Rust programming language (https://www.rust-lang.org/en-US/).
+Think C/C++ but no segmentation faults or memory errors. Yay!
+
+===========================
+Section 1. Installing Rust
+===========================
+To compile successfully, you need internet access.
+
+Easiest way is to compile on a linux VM with internet access and copy the binarys to the 
+isolated VMs using Virtual Box sharing or USB. 
+
+You need to install the Rust nightly compiler to compile the echo and finger clients.
+
+The easiest way to get the compiler is to download the installer from the site:
+
+https://static.rust-lang.org/dist/rust-nightly-x86_64-unknown-linux-gnu.tar.gz
+
+Extract the .tar.gz and run the install.sh that is in the extracted folder with sudo:
+
+sudo ./install.sh
+
+To check if it correctly installed everything run:
+
+rustc --version
+
+===============================================
+Section 2. Compiling and running finger-client
+===============================================
+In a terminal, cd to the "finger-client" folder that was downloaded.
+In this folder should be the Cargo.toml file and src folder. From
+here run:
+
+cargo build --release
+
+This command will download all of the projects dependencies and build 
+them and then build our finger-client binary. The finger-client binary
+will be located in the ./target/release/ folder and can be run like:
+
+./finger-client
+./finger-client user
+./finger-client user@host
