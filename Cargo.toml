@@ -1,0 +1,8 @@
+[package]
+name = "finger-client"
+version = "0.1.0"
+authors = ["Alex Mullins <jalexmullins91@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1.2"
