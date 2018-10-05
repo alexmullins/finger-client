@@ -39,10 +39,10 @@ fn main() -> Result<(), Error> {
     write!(&mut stream, "{}", user)?;
     write!(&mut stream, "\r\n");
     let mut msg = String::new();
-    let _ = stream.read_to_string(&mut msg);
+    let  = stream.read_to_string(&mut msg);
     // Now close connection
     stream.shutdown(Shutdown::Both)?;
     // print out response
-    println!("{:?}", msg);
+    println!("{}", msg);
     return Ok(());
 }
